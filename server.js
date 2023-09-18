@@ -1,3 +1,4 @@
+import "dotenv/config"
 import app from "../express-mongo/src/app.js";
 const PORT = 3000;
 
