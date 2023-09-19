@@ -9,7 +9,7 @@ class LivroController {
     //Controlador da url base
     static async listarLivros(req, res){
         try{
-            const listaLivros = await livro.find({})//Método para pegar todos os dados
+            const listaLivros = await livro.find({})//Método retorna todos os dados que estão entre ()
             res.status(200).json(listaLivros)
         }catch(erro){
             res.status(500).json({ message: `${erro.message} - Falha na requisição` })
